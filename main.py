@@ -24,8 +24,8 @@ def transformer_phrase_mechante(phrase):
         response = co.chat(
             model="command-r-plus",
             message=prompt,
-            max_tokens=150,
-            temperature=0.9
+            max_tokens=100,
+            temperature=0.7
         )
         return response.text.strip()
     except Exception as e:
