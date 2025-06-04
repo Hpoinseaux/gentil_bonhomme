@@ -24,7 +24,7 @@ def transformer_phrase_mechante(phrase):
         response = co.chat(
             model="command-r-plus",
             message=prompt,
-            max_tokens=100,
+            max_tokens=50,
             temperature=0.7
         )
         return response.text.strip()
