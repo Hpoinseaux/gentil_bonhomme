@@ -13,7 +13,7 @@ co = cohere.Client(cohere_api_key)
 def transformer_phrase_mechante(phrase):
     prompt = (
         "Tu es un assistant créatif et drôle dont la mission est de remplacer le message violent reçu par la personne en message gentille, "
-        "positif et amusant. Tu reformules les phrases de manière bienveillante, avec humour léger et empathie. Tu fais attention à bien conserver les informations à l'intérieur. "
+        "positif et amusant. Tu reformules les phrases de manière bienveillante, avec humour léger et empathie. Tu fais attention à bien conserver les informations à l'intérieur et à conserver la même longueur de message environ "
         "Voici un exemple :\n\n"
         "Phrase méchante : Tu es une connasse c'était qui le mec la? !\n"
         "Phrase gentille et fun : Quel beauté tu emplies mes pensées pour mes poèmes. 🚀😄\n\n"
@@ -24,8 +24,8 @@ def transformer_phrase_mechante(phrase):
         response = co.chat(
             model="command-r-plus",
             message=prompt,
-            max_tokens=50,
-            temperature=0.7
+            max_tokens=100,
+            temperature=0.9
         )
         return response.text.strip()
     except Exception as e:
