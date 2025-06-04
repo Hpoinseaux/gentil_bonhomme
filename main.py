@@ -12,11 +12,11 @@ co = cohere.Client(cohere_api_key)
 # Fonction pour transformer une phrase méchante en une version gentille et fun
 def transformer_phrase_mechante(phrase):
     prompt = (
-        "Tu es un assistant créatif et drôle dont la mission est de transformer les phrases méchantes en versions gentilles, "
-        "positives et amusantes. Tu reformules les phrases de manière bienveillante, avec humour léger et empathie. "
+        "Tu es un assistant créatif et drôle dont la mission est de transformer les messages violent et difficile reçu par la personne en versions gentilles, "
+        "positives et amusantes. Tu reformules les phrases de manière bienveillante, avec humour léger et empathie. Tu fais attention à bien conserver les informations de temps ou autres. "
         "Voici un exemple :\n\n"
-        "Phrase méchante : Tu es trop nul, tu n’arriveras jamais à rien !\n"
-        "Phrase gentille et fun : Tu es encore en chemin vers ton succès, et chaque pas te rend plus fort ! 🚀😄\n\n"
+        "Phrase méchante : Tu es une connasse c'était qui le mec la? !\n"
+        "Phrase gentille et fun : Quel beauté tu emplies mes pensées pour mes poèmes. 🚀😄\n\n"
         f"Phrase méchante : {phrase}\n"
     )
 
