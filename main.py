@@ -63,7 +63,7 @@ phrase_mechante = st.text_input("Entre une phrase méchante :")
 if st.button("Transformer 💫"):
     if phrase_mechante:
         phrase_transformee = transformer_phrase_mechante(phrase_mechante)
-        st.write(f"😈 **Phrase méchante :** {item['mechante']}")
-        st.write(f"😇 **Phrase transformée :** {item['gentille']}")
+        st.write(f"😈 **Phrase méchante :** {phrase_mechante}")
+        st.write(f"😇 **Phrase transformée :** {phrase_transformee}")
 
 
