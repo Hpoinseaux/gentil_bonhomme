@@ -42,7 +42,7 @@ st.markdown("<h3 style='text-align: right; font-size: 14px;'>Hadrien Poinseaux</
 page_bg_img = '''
 <style>
 [data-testid="stMain"] {
-background-color: #fbeec1;
+background-color: #d63384;
 }
 </style>
 '''
