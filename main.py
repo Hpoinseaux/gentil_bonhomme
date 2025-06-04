@@ -22,16 +22,13 @@ def transformer_phrase_mechante(phrase):
     )
 
     try:
-        response = co.generate(
+        response = co.chat(
             model="command-xlarge-nightly",
             prompt=prompt,
             max_tokens=100,
-            temperature=0.9,
-            k=0,
-            p=0.95,
-            stop_sequences=["\n"]
+            temperature=0.9
         )
-        return response.generations[0].text.strip()
+        return response.text.strip()
     except Exception as e:
         return f"Erreur lors de la transformation : {e}"
 
