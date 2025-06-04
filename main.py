@@ -18,7 +18,6 @@ def transformer_phrase_mechante(phrase):
         "Phrase méchante : Tu es trop nul, tu n’arriveras jamais à rien !\n"
         "Phrase gentille et fun : Tu es encore en chemin vers ton succès, et chaque pas te rend plus fort ! 🚀😄\n\n"
         f"Phrase méchante : {phrase}\n"
-        "Phrase gentille et fun :"
     )
 
     try:
